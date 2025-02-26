@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #buttonA {
+            font-size: 30px;
+            padding: 20px 30px;
+            color: #ffd1d8;
+            margin-top: 1px;
+            margin-left: 705px;
+            border: none;
+            border-radius: 15px;
+            font-style: italic;
+            text-align: center;
+        }
+
+
+
+        #buttonB {
+            font-size: 30px;
+            padding: 20px 30px;
+            margin-top: 1px;
+            color: #ffd1d8;
+            border: none;
+            border-radius: 15px;
+            font-style: italic;
+        
+
+        }
+
+      
+        #p{margin-top:80px;
+           margin-left: 100px;
+           color: azure;
+           font-size: 50px;
+           font-style: oblique;}
+
+    
+       
+    
+
+    </style>
+</head>
+
+
+<body style="background-color: #ffd1d8;">
+
+    <div style="margin-top: 120px; text-align: center;">
+    <img src="微信图片_20250226133341.png" width="230" height="230" >
+    </div>
+    <div style="text-align: center;"></div>
+
+    <P id="p" style="text-align: center;">
+        DID YOU MISS ME? MISS ME? MISS ME? ₍^ₗ    ̫  ₗ^₎
+    </P>
+   
+    
+    <a href="3.HTML">
+    <button id="buttonA" >YES</button>
+    </a>
+    
+    <button id="buttonB" onclick="enlargeButtonA()"> NO</button>
+
+    <script>  
+        function enlargeButtonA() {
+            let buttonA = document.getElementById('buttonA');
+            let currentSize = parseInt(window.getComputedStyle(buttonA).fontSize);
+            buttonA.style.fontSize = (currentSize + 50) + 'px';
+        }
+
+
+
+    </script>
+</body>
+</html>
